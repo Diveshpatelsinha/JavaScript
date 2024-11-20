@@ -59,15 +59,25 @@
 
 //practice question 4
 
-const userInput = prompt("Enter a number:")
-let number = Number.parseInt(userInput)
+// const userInput = prompt("Enter a number:")
+// let number = parseInt(userInput)
 
-if(isNaN(number)){
-    alert("please enter a valid number")
-}else if(number>4){
-    alert("Redirecting to google.....")
-    window.location.href = "http://www.google.com";
-}else{
-    alert("your entered number is not greater than 4.Therefore no redirecting..")
+// if(isNaN(number)){
+//     alert("please enter a valid number")
+// }else if(number>4){
+//     alert("Redirecting to google.....")
+//     window.location.href = "http://www.google.com";
+// }else{
+//     alert("your entered number is not greater than 4.Therefore no redirecting..")
+// }
+
+//practice question 5
+
+const color = prompt("Enter a color name of your choice: ").toLowerCase()
+
+if (color) {
+    document.body.style.backgroundColor = color;
+    alert(`the background color has been changed to ${color}`)
+} else {
+    alert("no color entered the background will not change!")
 }
-
